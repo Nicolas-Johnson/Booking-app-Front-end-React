@@ -103,5 +103,47 @@
       }
     }
   }
+  .lovedList {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    .lovedListItem {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 23%;
+      .lovedListItemImg {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .lovedListItem-name {
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+      .lovedListItem-city {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+      .lovedListItem-price {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      .lovedListItem-rating {
+        button {
+          background-color: blue;
+          color: white;
+          padding: 5px;
+          border: none;
+          outline: none;
+          border-radius: 3px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }
 
