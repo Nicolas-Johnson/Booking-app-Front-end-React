@@ -1,0 +1,107 @@
+.homecontainer {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100vw;
+  text-align: left;
+
+  .homeTitle {
+    font-size: 1.5rem;
+    padding: 0 0 0 10%;
+  }
+  .featured {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    .featuredItem {
+      height: 400px;
+      background: red;
+      border-radius: 10px;
+      &:nth-child(1) {
+        background-image: url("https://www.levarti.com.br/blog/wp-content/uploads/2020/10/LevDSC_4003.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(2) {
+        background-image: url("https://www.penaestrada.blog.br/wp-content/uploads/2016/03/onde-ficar-em-fortaleza-67.jpg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(3) {
+        background-image: url("https://www.melhoresdestinos.com.br/wp-content/uploads/2016/08/o-que-fazer-em-sao-paulo-capa2019-01.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(4) {
+        background-image: url("https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/south-america/brazil/recife/recife-banner-mobile-1024x553.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(5) {
+        background-image: url("https://a.cdn-hotels.com/gdcs/production187/d1216/5791a1f0-c31d-11e8-9739-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium");
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .featuredTitles {
+        color: white;
+        padding: 20px;
+        text-shadow: 1px 1px 8px black;
+        h1 {
+          font-size: 1.6rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .pList {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    margin: 0 auto;
+    padding-left: 1000px;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px grey; 
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: lightgray; 
+      border-radius: 10px;
+    }
+    .pListItem {
+      width: 150px;
+      margin-left: 10px;
+      .pListImg {
+        width: 150px;
+        height: 150px;
+        object-fit: initial;
+        border-radius: 5px;       
+      }
+      .pListTitles {
+        margin-top: 20px;
+        h1 {
+          font-size: 1rem;
+        }
+        p {
+          margin-top: 5px;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
+

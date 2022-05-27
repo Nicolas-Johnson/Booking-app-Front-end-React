@@ -39,40 +39,40 @@ const Header = ({ type }) => {
         <div className="headerlist">
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faBed} />
-            <span>Stays</span>
+            <span>Hospedagens</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
-            <span>Fligts</span>
+            <span>Voos</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faCar} />
-            <span>Car Rentals</span>
+            <span>Aluguel de carros</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faBed} />
-            <span>Atractions</span>
+            <span>Atrações</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faTaxi} />
-            <span>Airport taxis</span>
+            <span>Taxi (aeroport)</span>
           </div>
         </div>
         {type !== 'list' &&
         <>
-          <h1 className="headerTitle">A lifetime of discounts? It's Genius.</h1>
+          <h1 className="headerTitle">Descontos para sempre? É Genius.</h1>
           <p className="headerDesc">
-            Get rewarded for your travels - unlock instant savings of 10% or more with a free NBooking account
+          Viajar compensa – libere descontos imediatos de 10% ou mais com uma conta grátis na Booking.com
           </p>
-          <button className="headerBtn">Sign in / Register</button>
+          <button className="headerBtn">Faça login / Cadastrar-se</button>
           <div className="headerSearch">
             <div className="headerSearchItem">
               <FontAwesomeIcon icon={faBed} className="headerIcon" />
-              <input type="text" placeholder="Where are you going?" className="headerSearchInput"/>
+              <input type="text" placeholder="Para onde você vai?" className="headerSearchInput"/>
             </div>
             <div className="headerSearchItem">
               <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
-              <span onClick={() => setOpenDate(!openDate)} className="headerSerachText">{`${format(date[0].startDate, "dd/MM/yyyy")} até ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
+              <span onClick={() => setOpenDate(!openDate)} className="headerSerachText">{`${format(date[0].startDate, "dd/MM/yyyy")} - ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
               {openDate && <DateRange
                 editableDateInputs={ true }
                 onChange={ item => setDate([item.selection])}
@@ -83,7 +83,7 @@ const Header = ({ type }) => {
             </div>
             <div className="headerSearchItem">
               <FontAwesomeIcon icon={faPerson} className="headerIcon" />
-              <span onClick={() => setOpenOption(!openOptions)} className="headerSerachText">{`${adults} adult - ${children} children - ${room} room`}</span>
+              <span onClick={() => setOpenOption(!openOptions)} className="headerSerachText">{`${adults} ${adults === 1 ? "adulto" : "adultos"} · ${children} ${children === 1 ? "criança" : "crianças"} ·  ${room} ${room === 1 ? 'quarto' : "quartoS"}`}</span>
               {openOptions &&
                 <div className="options">
                   <div className="optionItem">
