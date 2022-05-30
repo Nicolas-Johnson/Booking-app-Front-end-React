@@ -57,9 +57,13 @@
       right: 10%;
       width: 80%;
       .headerSearchItem {
+        margin: auto;
         display: flex;
         align-items: center;
         gap: 10px;
+        .headerBtn {
+          margin: auto;
+        }
 
         .headerSearchInput {
           border: none;

@@ -1,0 +1,142 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .listWrapper {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    .listSearch {
+      flex: 1;
+      max-height: 440px;
+      background-color: #febb02;
+      padding: 15px;
+      border-radius: 10px;
+      position: sticky;
+      top: 10px;
+      .listTitle {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+      .listItem {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+        label  {
+          font-size: 12px;
+        }
+        input {
+          height: 30px;
+          border: none;
+          padding: 5px;
+        }
+        .listItemtextSpan {
+          height: 30px;
+          padding: 5px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        .listItemOptions {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .listOptionsItem {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            span {
+              font-size: .9rem;
+            }
+            input {
+              width: 50px;
+            }
+          }
+          .listOptionsBtn {
+            padding: 10px;
+            background-color: #0071c2;
+            color: white;
+            border: none;
+            width: 100%;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        }
+      }
+    }    
+    .listResult {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .searchItem {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        padding: 20px;
+        img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+          margin-right: 10px;
+          
+        }
+        .searItemDescription {
+          display: flex;
+          flex-direction: column;
+          width: 65%;
+          margin-right: 10px;
+          h1 {
+            font-size: 1.5rem;
+          }
+          span {
+            font-size: 1.2rem;
+            margin: 10px 0;
+          }
+        }
+        .searchItemDetails {
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          width: 15%;
+          .searchItemDetailsAvaliation {
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0 110px;
+            .av {
+              margin-right: 20px;
+              p {
+                margin-bottom: 5px;
+              }
+            }
+            .rate {
+              padding: 0 5px;
+              background: blue;
+              color: white;
+              font-weight: 700;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+            }
+          }
+          button {
+            padding: 10px 0;
+            background-color: #0071c2;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: 700;
+            &:hover {
+              background-color: #04416d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
