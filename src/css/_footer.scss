@@ -1,0 +1,21 @@
+.footer {
+  width: 80%;
+  margin: 30px auto 0;
+  .fList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    .fListUl {
+      list-style: none;
+      .fListItem {
+        color: #0071c2;
+        cursor: pointer;
+        margin-bottom: 8px;
+        &:hover {
+          color: #003580;
+        }
+      }
+    }
+  }
+}
